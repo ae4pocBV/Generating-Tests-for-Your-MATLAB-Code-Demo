@@ -31,7 +31,7 @@ classdef TestRockPaperScissors < matlab.unittest.TestCase
         function testInvalidInputTypeThrows(testCase)
             % Verify that invalid inputs (not members) cause argument validation error
             testCase.verifyError(@() rockPaperScissors("lizard","spock"), 'MATLAB:validators:mustBeMember');
-            testCase.verifyError(@() rockPaperScissors("rock",42), 'MATLAB:argschk:wrongtype'); %#ok<GTARG>
+            testCase.verifyError(@() rockPaperScissors("rock",42), 'MATLAB:validators:mustBeMember'); %#ok<GTARG>
         end
     end
 end
