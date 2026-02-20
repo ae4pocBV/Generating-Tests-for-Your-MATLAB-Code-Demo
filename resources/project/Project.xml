@@ -132,6 +132,20 @@
                     </Category>
                 </Info>
             </File>
+            <File Location="TestRockPaperScissors.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="rockPaperScissorsTest.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
         </File>
         <File Location="code">
             <Info/>

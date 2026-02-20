@@ -19,14 +19,23 @@ isDivBy100 = mod(year,100) == 0;
 isDivBy4   = mod(year,  4) == 0;
 
 % Check for leap year
-if isDivBy400
+if isDivBy400 || (isDivBy4 && ~isDivBy100)
     isLeap = true;
-elseif isDivBy4
-    isLeap = true;
-elseif isDivBy100
-    isLeap = false;
 else
     isLeap = false;
 end
+
+% TODO: bv20260220 - following code has a bug see: isLeapYear(1900) should
+% be false
+
+% if isDivBy400
+%     isLeap = true;
+% elseif isDivBy4
+%     isLeap = true;
+% elseif isDivBy100
+%     isLeap = false;
+% else
+%     isLeap = false;
+% end
 
 end
