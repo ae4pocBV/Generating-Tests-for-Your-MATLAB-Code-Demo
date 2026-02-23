@@ -1047,4 +1047,4 @@ To get you started, the workshop provides a test named [`testSimpleSort`](./test
 - Add code to the `checkIsSortedAscending` local function at the bottom of the file to check whether the result is sorted in ascending order
 - Find an existing test verification method to check whether the result has the same number of elements as the input
 
-Copyright 2025 The MathWorks, Inc.
+Copyright 2025-2026 The MathWorks, Inc.
